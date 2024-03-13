@@ -88,3 +88,11 @@ Models / folder
             - PasswordDTO / file
                 - string Salt
                 - string Hash
+
+
+
+username:
+BlogLogin
+
+password:
+Password123!@#
