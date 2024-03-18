@@ -128,7 +128,6 @@ namespace Lvl3Week3Day2_BlogBackend.Services
         {
             IActionResult Result = Unauthorized();
 
-
             //check if user exists
             if (DoesUserExist(User.Username))
             {
