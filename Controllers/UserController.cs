@@ -63,5 +63,12 @@ namespace Lvl3Week3Day2_BlogBackend.Controllers
             return _data.DeleteUser(userToDelete);
         }
 
+
+        [HttpGet]
+        [Route("GetUserByUsername/{username}")]
+        public UserIdDTO GetUserByUsername(string username){
+            return _data.GetUserIdDTOByUsername(username);
+        }
+
     }
 }

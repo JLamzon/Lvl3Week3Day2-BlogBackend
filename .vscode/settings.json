@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "DTOs"
-    ]
+    ],
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin/Release/net7.0/publish"
 }

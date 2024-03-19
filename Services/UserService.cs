@@ -232,6 +232,20 @@ namespace Lvl3Week3Day2_BlogBackend.Services
            return result;
         }
 
+
+        public UserIdDTO GetUserIdDTOByUsername(string username){
+
+            UserIdDTO UserInfo = new UserIdDTO();
+
+            //query through database to find the user
+            UserModel foundUser = _context.UserInfo.SingleOrDefault(user => user.Username == username);
+
+            UserInfo.UserId = foundUser.ID;
+            UserInfo.PublisherName = foundUser.Username;
+
+            return UserInfo;
+        }
+
     }
 }
 
