@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/Lvl3Week3Day2-BlogBackend.props" />
-</Project>

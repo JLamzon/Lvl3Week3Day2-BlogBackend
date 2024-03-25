@@ -40,6 +40,11 @@ namespace Lvl3Week3Day2_BlogBackend.Services
             return _context.BlogInfo.Where(item => item.Categories == category);
         }
 
+        public IEnumerable<BlogItemModel> GetItemsByDate(string date){
+        return _context.BlogInfo.Where(item => item.Date == date);
+        }
+
+
         public IEnumerable<BlogItemModel> GetPublishedItems()
         {
             return _context.BlogInfo.Where(item => item.IsPublished == true);

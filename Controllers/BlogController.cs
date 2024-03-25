@@ -54,6 +54,12 @@ namespace Lvl3Week3Day2_BlogBackend.Controllers
 
 
         [HttpGet]
+        [Route("GetItemsByDate/{date}")]
+        public IEnumerable<BlogItemModel> GetItemByDate(string date){
+            return _data.GetItemsByDate(date);
+        }
+
+        [HttpGet]
         [Route("GetAllItemsByTags/{tag}")]
         public List<BlogItemModel> GetAllItemsByTags(string tag){
             return _data.GetAllItemsByTags(tag);
